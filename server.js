@@ -14,7 +14,7 @@ app.use(logger('dev'));
 app.use(express.static('public'));
 
 //Mongoose 
-mongoose.connect('mongodb://heroku_z2hrssqk:2p05ml5kqb9log7uvffai3fgcg@ds143707.mlab.com:43707/heroku_z2hrssqk');
+mongoose.connect('mongodb://localhost/cheerio');
 var db = mongoose.connection;
 
 db.on('error', function(err){
