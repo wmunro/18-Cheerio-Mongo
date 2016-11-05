@@ -2,8 +2,14 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var ContentSchema = new Schema({
-  title: {type: String},
-  link: {type: String},
+  title: {
+  	type: String,
+  	required:true
+  },
+  link: {
+  	type: String,
+  	required:true
+  },
  
 });
 
